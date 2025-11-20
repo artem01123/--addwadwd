@@ -4,12 +4,14 @@
 .head{
     display: flex;
     position: relative;
+    margin: 0;
     width:100%;
     height:110px;
-    background-color: #FFE799;
-    align-items:center;
+    background-color: #FFE799
+    
 }
 .BW{
+    
     padding-left: 425px;
     padding-top: 35px;
     text-align: center;
@@ -22,6 +24,7 @@
 }
 .gradient{
     height:35px;
+    weight:100%;
     background: linear-gradient(rgb(184, 184, 184), white);
 }
 .description{
@@ -38,7 +41,12 @@
     margin-top: 50px;
     display: flex;
 }
-.image1, .image2{
+.image1{
+    padding-left: 150px;
+    width:450px;
+    height: 300px;
+}
+.image2{
     padding-left: 150px;
     width:450px;
     height: 300px;
@@ -48,149 +56,147 @@
 }
 .ifki{
     padding-left: 90px;
-    font-size: 23px;
+    font-size: 23px;  
 }
 .program{
     font-size: 23px;
     margin-top: 50px;
+    position: relative;
     text-align: center;
+    align-items: center;
 }
-.section_pro{
-    display: flex;
+.Ppro{
+    font-size: 25px;
+}
+.dayF{
+    
+    position: relative;
+    margin-left: 90px;
+    margin-top: 50px;
+    width:700px;
+    height:720px ;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    border-color: black;
+    text-align: center;
 }
 .image_program{
     margin-top: 218px;
     gap: 35px;
     width: 550px;
-    height:1350px;
+    height:1350px ;
     display: flex;
-    justify-content:center;
+    position: relative;
+    justify-content:center ;
     flex-direction: column;
-    align-items:center;
+    margin-left: 180px;
 }
 .image{
     width: 800px;
     height: 550px;
 }
-.btn-container{
-    display:flex;
-    gap:15px;
-    justify-content:center;
+.section_pro{
+    display: flex;
+    
 }
-.btn{
-    margin-top:50px;
-    height:70px;
-    width:300px;
-    background:#FFE799;
-    border:none;
-    border-radius:15px;
-    font-size:25px;
+.dF{
+    font-size: 28px;
+}
+.desc_dF{
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dayT{
+    
+    margin-left: 90px;
+    margin-top: 50px;
+    width:700px;
+    height:460px ;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    border-color: black;
+    text-align: center;
+}
+.dT{
+    font-size: 28px;
+}
+.desc_dT{
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dayTR{
+    
+    margin-left: 90px;
+    margin-top: 50px;
+    width:700px;
+    height:270px ;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    border-color: black;
+    text-align: center;
+}
+.dTR{
+    font-size: 28px;
+}
+.desc_dTR{
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.foot{
+    display: flex;
+    margin-top: 50px;
+    width:100% ;
+    height:250px;
+    background-color: #FFE799;
+    border: #000000 solid 2px;
+    border-radius: 15px;
+}
+.desc_AdoYA{
+    font-size: 21px;
+}
+.firstDiv{
+    width: 65%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.off{
+    margin-top: 22px;
+    font-size: 23px;
+    
+}
+.offH{
+    
+    color: #000000;
+}
+.gmail{
+    padding-left: 270px;
+    padding-top: 50px;
+    text-align: right;
+    font-size: 21px;
 }
 
-/* --- Ноутбуки */
-@media (max-width:1280px) and (min-width:769px){
-    .one_part, .section_pro{
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-    .description{
-        width:80%;
-        padding-left:0;
-        height:auto;
-    }
-    .image_program{
-        margin:0;
-        width:80%;
-        height:auto;
-    }
-    .image{
-        width:100%;
-        height:auto;
-    }
-    .dayF,.dayT,.dayTR{
-        width:80%;
-        margin:20px auto;
-        height:auto;
-    }
+.soc{
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 400px;
 }
-
-/* --- Телефоны */
-@media (max-width:768px){
-
-    body{
-        overflow-x:hidden;
-        text-align:center;
-    }
-
-    .head{
-        flex-direction:column;
-        height:auto;
-        align-items:center;
-    }
-
-    .logo{
-        width:140px;
-        height:auto;
-        padding:10px 0;
-    }
-
-    .BW{
-        padding:0;
-        font-size:20px;
-    }
-
-    .one_part{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .description{
-        width:90%;
-        height:auto;
-        padding:0;
-        font-size:18px;
-    }
-
-    .desc_image{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .image1, .image2, .image{
-        width:90%;
-        height:auto;
-        padding-left:0;
-    }
-
-    .section_pro{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .dayF, .dayT, .dayTR{
-        width:90%;
-        margin:15px 0;
-        height:auto;
-    }
-
-    .btn-container{
-        width:100%;
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .btn{
-        width:80%;
-        height:55px;
-        font-size:18px;
-    }
-
-    .ifki{
-        padding-left:0;
-        text-align:center;
-        font-size:18px;
-    }
+.socIMG{
+    width: 50px;
+    height: 50px;
+}
+.socIMGW{
+    width: 55px;
+    height: 55px;
+}
+.himg{
+    text-decoration: none;
 }
