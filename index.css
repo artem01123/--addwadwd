@@ -284,18 +284,44 @@
     .dayF, .dayT, .dayTR {
         width: 100%;
         margin-left: 0;
-        font-size: 16px;
+        margin-top: 20px;
         height: auto;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .desc_dF, .desc_dT, .desc_dTR {
+        font-size: 15px;
+        padding: 10px;
     }
     .image_program {
-        flex-direction: column;
         width: 100%;
         margin-left: 0;
         gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .image {
         width: 100%;
+        max-width: 100%;
         height: auto;
+        margin: 10px 0;
+    }
+    .btn-container {
+        width: 100%;
+        gap: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 0;
+        margin: 0 0 10px 0;
     }
     .foot {
         flex-direction: column;
@@ -318,6 +344,8 @@
         margin-left: 0;
         margin-top: 10px;
         gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .socIMG, .socIMGW {
         width: 35px;
