@@ -200,3 +200,174 @@
 .himg{
     text-decoration: none;
 }
+
+/* ...existing code... */
+
+/* Адаптация для ноутбуков и планшетов */
+@media (max-width: 1200px) {
+    .BW {
+        padding-left: 100px;
+        font-size: 28px;
+    }
+    .logo {
+        width: 150px;
+        height: 70px;
+        padding-left: 20px;
+    }
+    .description, .desc_image {
+        padding-left: 20px;
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+    .image1, .image2 {
+        width: 300px;
+        height: 200px;
+        padding-left: 20px;
+    }
+    .image_program {
+        width: 100%;
+        margin-left: 0;
+        gap: 15px;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+    }
+    .foot {
+        flex-direction: column;
+        height: auto;
+    }
+    .gmail {
+        padding-left: 0;
+        text-align: left;
+    }
+    .soc {
+        margin-left: 0;
+    }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .BW {
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .logo {
+        width: 120px;
+        height: 50px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .one_part {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .description, .desc_image {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .image1, .image2 {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+    .dayF, .dayT, .dayTR {
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        height: auto;
+    }
+    .image_program {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 10px;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+    }
+    .foot {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .firstDiv, .twoDiv {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .gmail {
+        padding-left: 0;
+        padding-top: 10px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .soc {
+        margin-left: 0;
+        margin-top: 10px;
+        gap: 5px;
+    }
+    .socIMG, .socIMGW {
+        width: 35px;
+        height: 35px;
+    }
+}
+/*
+.btn-container {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+*/
+.btn {
+    width: 335px;
+    height: 60PX;
+    background: #FFE799;
+    border: 2px solid #000;
+    border-radius: 16px;
+    padding: 20px ;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    box-shadow: none;
+    
+}
+
+.btn-container{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 30px;
+    margin-left: 90px; /* Сдвиг вправо */
+}
+.btn:first-child {
+    margin-left: 0;
+}
+.btn:last-child {
+    margin-right: 0;
+}
+
+/* Приподнять блок программы */
+.section_pro {
+    margin-bottom: 80px;
+    width: 700px;
+   
+}
