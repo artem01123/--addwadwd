@@ -98,7 +98,8 @@
 }
 .section_pro{
     display: flex;
-    
+     margin-bottom: 80px;
+
 }
 .dF{
     font-size: 28px;
@@ -202,49 +203,6 @@
     text-decoration: none;
 }
 
-/* Адаптация для ноутбуков и планшетов */
-@media (max-width: 1200px) {
-    .BW {
-        padding-left: 100px;
-        font-size: 28px;
-    }
-    .logo {
-        width: 150px;
-        height: 70px;
-        padding-left: 20px;
-    }
-    .description, .desc_image {
-        padding-left: 20px;
-        width: 100%;
-        height: auto;
-        font-size: 18px;
-    }
-    .image1, .image2 {
-        width: 300px;
-        height: 200px;
-        padding-left: 20px;
-    }
-    .image_program {
-        width: 100%;
-        margin-left: 0;
-        gap: 15px;
-    }
-    .image {
-        width: 100%;
-        height: auto;
-    }
-    .foot {
-        flex-direction: column;
-        height: auto;
-    }
-    .gmail {
-        padding-left: 0;
-        text-align: left;
-    }
-    .soc {
-        margin-left: 0;
-    }
-}
 
 /* Адаптация для телефонов */
 @media (max-width: 768px) {
@@ -294,7 +252,7 @@
 
     /* Делаем блоки дней адаптивными и по центру */
     .section_pro {
-        width: 100%;
+        width: 100% !important;
         margin: 0 auto;
         padding: 0;
         position: relative;;
@@ -434,12 +392,4 @@
 }
 .btn:last-child {
     margin-right: 0;
-}
-
-/* Приподнять блок программы */
-.section_pro {
-    display: flex;
-    margin-bottom: 80px;
-    width: 700px;
-   
 }
