@@ -283,11 +283,11 @@
     }
     .dayF, .dayT, .dayTR {
         width: 100%;
-        margin-left: 0;
+        margin-left: 10px;
         margin-top: 20px;
         height: auto;
         font-size: 16px;
-        box-sizing: border-box;
+        
     }
     .desc_dF, .desc_dT, .desc_dTR {
         font-size: 15px;
