@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 .head{
     display: flex;
@@ -201,8 +202,6 @@
     text-decoration: none;
 }
 
-/* ...existing code... */
-
 /* Адаптация для ноутбуков и планшетов */
 @media (max-width: 1200px) {
     .BW {
@@ -249,6 +248,12 @@
 
 /* Адаптация для телефонов */
 @media (max-width: 768px) {
+    /* 10px отступы по бокам для всей страницы */
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .head {
         flex-direction: column;
         height: auto;
@@ -266,14 +271,19 @@
         padding-left: 0;
         padding-top: 0;
     }
+
     .one_part {
         flex-direction: column;
         margin-top: 20px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .description, .desc_image {
         width: 100%;
         height: auto;
         padding-left: 0;
+        padding-right: 0;
         font-size: 16px;
     }
     .image1, .image2 {
@@ -281,58 +291,88 @@
         height: auto;
         padding-left: 0;
     }
+
+    /* Делаем блоки дней адаптивными и по центру */
+    .section_pro {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
     .dayF, .dayT, .dayTR {
         width: 100%;
-        margin-left: 10px;
-        margin-top: 20px;
+        max-width: 100%;
+        margin: 16px 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 12px;
+        box-sizing: border-box;
         height: auto;
-        font-size: 16px;
-        
+        text-align: left;
     }
+
+    .dF, .dT, .dTR {
+        text-align: left;
+        font-size: 18px;
+    }
+
     .desc_dF, .desc_dT, .desc_dTR {
         font-size: 15px;
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1.4;
     }
+
+    /* Кнопки: растянуть по ширине и центр */
+    .btn-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 16px 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    /* Контейнер с фотографиями: по одному под каждым блоком (если фотки отдельно) */
     .image_program {
         width: 100%;
-        margin-left: 0;
+        margin: 12px 0 30px;
         gap: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-sizing: border-box;
     }
     .image {
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin: 10px 0;
+        display: block;
+        margin: 0;
     }
-    .btn-container {
-        width: 100%;
-        gap: 10px;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .btn {
-        width: 100%;
-        font-size: 15px;
-        padding: 10px 0;
-        margin: 0 0 10px 0;
-    }
+
+    /* Футер */
     .foot {
         flex-direction: column;
         height: auto;
         width: 100%;
         margin-top: 20px;
+        padding: 10px 0;
+        box-sizing: border-box;
     }
     .firstDiv, .twoDiv {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
+        padding: 0;
+        box-sizing: border-box;
     }
     .gmail {
         padding-left: 0;
@@ -343,13 +383,16 @@
     .soc {
         margin-left: 0;
         margin-top: 10px;
-        gap: 5px;
+        gap: 8px;
         display: flex;
         flex-wrap: wrap;
     }
     .socIMG, .socIMGW {
         width: 35px;
         height: 35px;
+    }
+    .ifki{
+        text-align: center;
     }
 }
 /*

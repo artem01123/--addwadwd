@@ -44,12 +44,12 @@
 }
 .image1{
     padding-left: 150px;
-    width:450px;
+    width:650px;
     height: 300px;
 }
 .image2{
     padding-left: 150px;
-    width:450px;
+    width:650px;
     height: 300px;
 }
 .tour{
@@ -201,8 +201,8 @@
 .himg{
     text-decoration: none;
 }
-
-/* Адаптация для ноутбуков и планшетов */
+/*
+Адаптация для ноутбуков и планшетов 
 @media (max-width: 1200px) {
     .BW {
         padding-left: 100px;
@@ -246,9 +246,9 @@
     }
 }
 
-/* Адаптация для телефонов */
+Адаптация для телефонов
 @media (max-width: 768px) {
-    /* 10px отступы по бокам для всей страницы */
+   
     body {
         padding-left: 0px;
         padding-right: 0px;
@@ -292,9 +292,9 @@
         padding-left: 0;
     }
 
-    /* Делаем блоки дней адаптивными и по центру */
+ 
     .section_pro {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         padding: 0;
     }
@@ -322,7 +322,7 @@
         line-height: 1.4;
     }
 
-    /* Кнопки: растянуть по ширине и центр */
+   
     .btn-container {
         width: 100%;
         display: flex;
@@ -340,7 +340,7 @@
         margin: 0;
     }
 
-    /* Контейнер с фотографиями: по одному под каждым блоком (если фотки отдельно) */
+    
     .image_program {
         width: 100%;
         margin: 12px 0 30px;
@@ -358,7 +358,7 @@
         margin: 0;
     }
 
-    /* Футер */
+   
     .foot {
         flex-direction: column;
         height: auto;
@@ -395,6 +395,7 @@
         text-align: center;
     }
 }
+*/
 /*
 .btn-container {
     width: 700px;
@@ -441,4 +442,67 @@
     margin-bottom: 80px;
     width: 700px;
    
+}
+/* 📱 Адаптация для телефонов */
+@media (max-width: 768px) {
+
+    /* центр IFKI */
+    .ifki {
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+    /* Дни программы — 100% ширина */
+    .dayF, .dayT, .dayTR {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        height: auto !important;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    /* Кнопки по центру */
+    .btn-container {
+        width: 100% !important;
+        margin-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .btn {
+        width: 100% !important;
+        max-width: 330px;
+    }
+
+    /* Футер полностью центр */
+    .foot, .firstDiv, .twoDiv, .gmail {
+        text-align: center;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .soc {
+        justify-content: center;
+        margin: 10px auto;
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Слайдер только на телефоне */
+    .mySwiper {
+        display: block;
+    }
+
+    /* Старые картинки программы скрыть */
+    .image_program {
+        display: none !important;
+    }
+}
+
+/* скрыть слайдер на ПК */
+.mySwiper {
+    display: none;
 }
