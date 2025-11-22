@@ -300,8 +300,7 @@
         position: relative;;
     }
     .dayF, .dayT, .dayTR {
-        width: 100%;
-        max-width: 100%;
+        
         margin: 16px 0;
         margin-left: 0;
         margin-right: 0;
