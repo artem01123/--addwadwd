@@ -414,3 +414,47 @@ body, html {
         padding: 0 !important;
     }
 }
+/* 💻 Адаптация для ноутбуков */
+@media (max-width: 1366px) and (min-width: 769px) {
+
+    body, html {
+        overflow-x: hidden !important;
+    }
+
+    .section_pro {
+        width: 100% !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    .dayF, .dayT, .dayTR {
+        max-width: 600px;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .btn-container {
+        width: 100% !important;
+        margin-left: 0 !important;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .image_program {
+        margin-left: 0 !important;
+        width: 100% !important;
+        align-items: center;
+    }
+
+    .image {
+        width: 80% !important;
+        height: auto !important;
+    }
+
+    .foot {
+        width: 100% !important;
+        margin: 30px auto 0 auto !important;
+    }
+}
